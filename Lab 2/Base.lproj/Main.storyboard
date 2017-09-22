@@ -59,7 +59,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQQ-mf-DKL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQQ-mf-DKL">
                                 <rect key="frame" x="0.0" y="318" width="375" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="ygH-Ah-L4B"/>
@@ -68,7 +68,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="textFieldActions:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bjY-e2-eEA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fbH-Ej-ajH"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Text Entered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzI-Nj-Adk">
@@ -105,6 +105,7 @@
                         <outlet property="slider" destination="Xf4-AQ-dIW" id="zmc-De-Csh"/>
                         <outlet property="sliderStatus" destination="vzq-e9-Qsr" id="OhC-c9-cg5"/>
                         <outlet property="sliderValue" destination="i5r-9K-kfH" id="iZe-93-z3K"/>
+                        <outlet property="textField" destination="EQQ-mf-DKL" id="N1x-m7-Rev"/>
                         <outlet property="textFieldLabel" destination="YzI-Nj-Adk" id="2NF-Mw-zn0"/>
                     </connections>
                 </viewController>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITextFieldDelegate {
 
     @IBOutlet weak var segLable: UILabel!
     @IBOutlet weak var segue: UISegmentedControl!
@@ -16,8 +16,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderStatus: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var textFieldLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
     
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldLabel.text = textField.text
+        textField.resignFirstResponder()
+        return true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
